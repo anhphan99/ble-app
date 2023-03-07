@@ -3,7 +3,7 @@
 This is a Flutter project for Medibox. Medibox is an application to assist in diagnosis and medical liaison. Medibox wants to create an application to ease the process of diagnosis with the help of connected devices or conventional medical equipments.
 
 ## Documents
-See [DOCUMENTS](https://docs.google.com/document/d/1ObDaxUCgfl3nQ-53hm0buw9-iBbW_EHBCiAxoc707tg)
+See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.google.com/document/d/1ObDaxUCgfl3nQ-53hm0buw9-iBbW_EHBCiAxoc707tg)
 
 ## Environment
 
@@ -23,7 +23,7 @@ See [DOCUMENTS](https://docs.google.com/document/d/1ObDaxUCgfl3nQ-53hm0buw9-iBbW
 | [permission_handler](https://github.com/baseflow/flutter-permission-handler)                | ^10.2.0  
 | [pdf](https://github.com/DavBfr/dart_pdf)                                                   | ^3.9.0  
 | [health](https://github.com/cph-cachet/flutter-plugins/tree/master/packages/health)         | ^4.5.0  
----
+
 
 ## Getting Started
 
@@ -102,6 +102,3 @@ src/
 |- main.dart
 
 ```
-
-### License
-This project is licensed under the [insert license here].
