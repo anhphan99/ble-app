@@ -64,6 +64,10 @@ src/
     |- ...
  
 |- data/
+    |- dasources/
+        |- local.dart
+            |- health_authorization_local_datasource.dart
+            |- ...
     |- error/
         |- exception.dart
     |- models/
