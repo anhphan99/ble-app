@@ -14,15 +14,15 @@ See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.g
 [✓] Android Studio (version 2022.1)
 
 ## Package
-| Package                                                                                     | Pub                                                                                                                  |
-| ------------------------------------------------------------------------------------------  | -------------------------------------------------------------------------------------------------------------------- |
-| [bloc](https://github.com/felangel/bloc/tree/master/packages/bloc)                          | ^8.1.0                              |
-| [flutter_bloc](https://github.com/felangel/bloc/tree/master/packages/flutter_bloc)          |  ^8.1.1     
-| [equatable](https://github.com/felangel/equatable)                                          | ^2.0.5
-| [dartz](https://github.com/spebbe/dartz)                                                    | ^0.10.1  
-| [permission_handler](https://github.com/baseflow/flutter-permission-handler)                | ^10.2.0  
-| [pdf](https://github.com/DavBfr/dart_pdf)                                                   | ^3.9.0  
-| [health](https://github.com/cph-cachet/flutter-plugins/tree/master/packages/health)         | ^4.5.0  
+| Package                                                                                     | Pub                                                                                           |
+| ------------------------------------------------------------------------------------------  | --------------------------------------------------------------------------------------------  |
+| [bloc](https://pub.dev/packages/bloc)                                         | ^8.1.0                              
+| [flutter_bloc](https://pub.dev/packages/flutter_bloc)                         | ^8.1.1     
+| [equatable](https://pub.dev/packages/equatable)                               | ^2.0.5
+| [dartz](https://pub.dev/packages/dartz)                                       | ^0.10.1  
+| [permission_handler](https://pub.dev/packages/flutter-permission-handler)     | ^10.2.0  
+| [pdf](https://pub.dev/packages/pdf)                                           | ^3.9.0  
+| [health](https://pub.dev/packages/health)                                     | ^4.5.0  
 
 
 ## Getting Started
