@@ -3,7 +3,7 @@
 This is a Flutter project for Visioky by Madison Technologies. Visiokit is an application to assist in diagnosis and medical liaison, easing the process of diagnosis with the help of connected devices or conventional medical equipment.
 
 ## Documents
-See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.google.com/document/d/1QImGL59e4IesWYaj9YFCn9OEEhqpDXszhvF1oSW84wQ/edit)
+See the [Visioklit Documentation (Phase 1)](https://docs.google.com/document/d/1QImGL59e4IesWYaj9YFCn9OEEhqpDXszhvF1oSW84wQ/edit)
 
 ## Environment
 
