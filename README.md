@@ -1,9 +1,9 @@
-# Medibox
+# Visiokit
 
-This is a Flutter project for Medibox. Medibox is an application to assist in diagnosis and medical liaison. Medibox wants to create an application to ease the process of diagnosis with the help of connected devices or conventional medical equipments.
+This is a Flutter project for Visioky by Madison Technologies. Visiokit is an application to assist in diagnosis and medical liaison, easing the process of diagnosis with the help of connected devices or conventional medical equipment.
 
 ## Documents
-See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.google.com/document/d/1ObDaxUCgfl3nQ-53hm0buw9-iBbW_EHBCiAxoc707tg)
+See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.google.com/document/d/1QImGL59e4IesWYaj9YFCn9OEEhqpDXszhvF1oSW84wQ/edit)
 
 ## Environment
 
@@ -12,6 +12,8 @@ See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.g
 [✓] Xcode - develop for iOS and macOS (Xcode 14.2)
 
 [✓] Android Studio (version 2022.1)
+
+[✓] Java (version 19.0.2)
 
 ## Package
 | Package                                                                                     | Pub                                                                                           |
@@ -23,7 +25,7 @@ See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.g
 | [permission_handler](https://pub.dev/packages/flutter-permission-handler)     | ^10.2.0  
 | [pdf](https://pub.dev/packages/pdf)                                           | ^3.9.0  
 | [health](https://pub.dev/packages/health)                                     | ^4.5.0  
-
+| ...    
 
 ## Getting Started
 
@@ -32,29 +34,61 @@ See the [User Manual for Medibox Mobile Applications (Phase 0.5)](https://docs.g
 Download or clone this repo by using the link below:
 
 ```
-https://bitbucket.org/madison_tech/medibox-flutter/src/phase_0.5/
+https://bitbucket.org/madison_tech/medibox-flutter/src/phase_1/
 ```
 
 **Step 2:**
 
-Go to project root and execute the following command in console to get the required dependencies: 
+*Workpace settings*
+
+[✓] Setup flutter flavor: Download config file [here](https://drive.google.com/file/d/12vNAbBHnHdOnmv8CO3Hl4xIM6zLy9KV7/view?usp=sharing)
+
+[✓] *Disable flutter desktop support*
 
 ```
-flutter pub get 
+flutter config --no-enable-macos-desktop
+flutter config --no-enable-windows-desktop
+flutter config --no-enable-linux-desktop
 ```
 
-Select a device to use
+[✓] *Vertical rulers in VSCode*
+
+File → Preferences → Settings. Paste this setting:
 
 ```
-flutter run
+"editor.rulers": [
+        80,
+        120
+]
 ```
+**Step 3:** Run project
+
+*Connect your device*
+
+[DEV] Debug mode
+
+```
+flutter run --flavor dev
+```
+
+[DEV] Release mode
+
+```
+flutter run --flavor dev --release
+```
+
+Note*: If you want to run on production environment just change dev to prod.
+
 ### Project Structure
 
 ```
 src/
 |- common/
-    |- app_data_formatter.dart
-    |- input_box.dar/
+    |- routers
+    |- app_routers.dart
+    |- widget
+        |- input_box.dart/
+        |- ...
     |- ...
 
 |- constants/
@@ -64,14 +98,14 @@ src/
     |- ...
  
 |- data/
-    |- dasources/
+    |- repositories/
         |- local.dart
-            |- health_authorization_local_datasource.dart
+            |- user_repository.dart
             |- ...
-    |- error/
-        |- exception.dart
+        |- remote
+            |- health_repository.dart
     |- models/
-        |- health_data.dart
+        |- user.dart
         |- ...
     |- network.dart
     
@@ -80,28 +114,42 @@ src/
     |- ...
 
 |- managers
-    |- export_pdf_manager.dart
     |- health_manager.dart
     |- ...
+    
+|- services
+    |- health_service
+        |- health_service.dart
+    |- json_loader
+    |- managers
+    |- notification_service
+    |- permission_services
+|- utils
+    |- health_service_types.dart
+    |- dropdown_data_helper.dart
+    |- ...
+    
 |- presentation
-    |- page/
-        |- health/
+    |- pages/
+        |- login/
             |- bloc/
                 |- bloc.dart
-                |- health_bloc.dart
-                |- health_event.dart
-                |- health_state.dart
+                |- login_bloc.dart
+                |- login_event.dart
+                |- login_state.dart
             |- page/
-                |- health_body.dart
-                |- health_page.dart
+                |- login_body.dart
+                |- login_page.dart
                 |- page.dart
             |- widgets/
-                |- health_data_card.dart
-                |- permission_required.dart
+                |- login_input_view.dart
+                |- login_top_section.dart
                 |- widget.dart
                 |- ...
-            |- health.dart
+            |- login.dart
         |- tabbar/
+        |- home/
+        |- ...
     |- presentation.dart
 |- main.dart
 
